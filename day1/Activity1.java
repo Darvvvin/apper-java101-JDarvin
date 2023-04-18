@@ -26,6 +26,12 @@ class Activity1 {
         String crushName = myScanner.nextLine();
 
         // ITEM#2: Check if crushName is not empty. If empty, display "Your crushName is required."  then the program should terminate
+        if(crushName.isEmpty()) {
+            System.out.println("Your crushName is required.");
+            System.exit(0);
+        }
+
+        myScanner.close();
 
         int nameLength = name.length(); // ITEM#3 get length of name
         int crushNameLength = crushName.length(); // ITEM#4 get length of crushName
@@ -35,6 +41,11 @@ class Activity1 {
         System.out.println("Your compatibility result: " + result);
 
         // ITEM#5 if result is less than 50, display "SAD :( ", else display name and crush name with <3 E.g "Orvyl and JY is <3"
+        if(result >= 50) {
+            System.out.println(name + " and " + crushName + " is <3");
+        } else {
+            System.out.println("SAD :(");
+        }
     }
 
     static int result(int nameLength, int crushNameLength) {
