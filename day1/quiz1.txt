@@ -6,5 +6,9 @@
 6. Java Virtual Machine
 7. False
 8. JAVA_HOME
-9.
+9. 
 10.
+
+public static void main(String[] args) {
+    System.out.println("Jacob Darvin");
+}
