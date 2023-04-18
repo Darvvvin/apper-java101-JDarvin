@@ -3,7 +3,7 @@
 3. Runtime Environment
 4. Standard Library
 5. Java Virtual Machine
-6.
+6. Java Virtual Machine
 7.
 8.
 9.
