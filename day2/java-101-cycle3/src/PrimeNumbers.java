@@ -1,17 +1,11 @@
-import java.util.Scanner;
-
 public class PrimeNumbers {
     public static void main(String[] args) {
-        Scanner myScanner = new Scanner(System.in);
-        System.out.print("Enter number to check if prime: ");
-
-        int nInput = myScanner.nextInt();
-        System.out.println("Is your number a prime? " + checkIfPrime(nInput));
-
-        myScanner.close();
+        System.out.println("isPrime? " + isPrimeNumber(11));
     }
 
-    public static boolean checkIfPrime(int n) {
+    public static boolean isPrimeNumber(int n) {
+        long startTime = System.nanoTime();
+
         boolean isPrime = true;
         for(int i = 2; i <= n/2; i++) {
             if(n % i == 0) {
@@ -19,6 +13,11 @@ public class PrimeNumbers {
                 break;
             }
         }
+
+        long endTime = System.nanoTime();
+
+        System.out.println("Duration: " + (endTime - startTime));
+
         return isPrime;
     }
 }
