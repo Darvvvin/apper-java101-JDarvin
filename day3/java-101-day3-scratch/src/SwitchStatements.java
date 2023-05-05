@@ -60,7 +60,7 @@ public class SwitchStatements {
     }
 
     public enum Animal {
-        DOG("favorite pet"), CAT, GOAT, COW;
+        DOG("favorite pet"), CAT("meow"), GOAT("hamilton"), COW("moo");
 
         private final String description;
 
