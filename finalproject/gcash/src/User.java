@@ -1,5 +1,5 @@
 public class User {
-    private String name;
+    private final String name;
     private double balance;
 
     // Constructor
