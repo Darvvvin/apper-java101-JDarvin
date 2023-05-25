@@ -2,6 +2,7 @@ public class User {
     private String name;
     private double balance;
 
+    // Constructor
     public User(String name, double balance) {
         this.name = name;
         this.balance = balance;

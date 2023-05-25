@@ -44,7 +44,7 @@ public class App {
         System.out.print("Recipient mobile number: ");
         String recipientNumberInput = scanner.nextLine();
 
-        if(users.get(recipientNumberInput) == null) { //TODO: Create method to check if number input is valid
+        if(users.get(recipientNumberInput) == null) {
             System.out.println("Recipient " + recipientNumberInput + " not found!");
             System.exit(0);
         } else if (recipientNumberInput.equals(senderNumberInput)) {
@@ -52,10 +52,10 @@ public class App {
             System.exit(0);
         }
 
-        System.out.print("Enter amount (Enter a valid number): ");
+        System.out.print("\nEnter amount (Enter a valid number): ");
         double amountInput = scanner.nextDouble();
         if(users.get(senderNumberInput).getBalance() < amountInput) {
-            System.out.println("Insufficient load transfer!");
+            System.out.println("Insufficient load transfer!\n");
         } else {
             users.get(senderNumberInput).setBalance(users.get(senderNumberInput).getBalance() - amountInput);
             users.get(recipientNumberInput).setBalance(users.get(recipientNumberInput).getBalance() + amountInput);
