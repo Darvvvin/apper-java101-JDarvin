@@ -19,8 +19,4 @@ public class User {
     public void setBalance(double balance) {
         this.balance = balance;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
