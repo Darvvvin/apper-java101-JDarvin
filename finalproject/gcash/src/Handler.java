@@ -9,7 +9,7 @@ interface ShareableLoadable {
     void getBalance(Map<String, User> users);
 }
 
-public class Shareable implements ShareableLoadable {
+public class Handler implements ShareableLoadable {
     @Override
     public void registerUser(Map<String, User> users) {
         Scanner scanner = new Scanner(System.in);
